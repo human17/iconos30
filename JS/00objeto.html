@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos en JS</title>
+	<meta name="description" content="En este documento aprenderemos programación orientada a objetos en JS">
+</head>
+<body>
+	<script>
+		//comentario de una sola linea
+		/*
+			comentario de
+			múltiples
+			lineas
+		*/
+		//Definición de clase o prototipo
+		function Perro(nombre, raza, edad, sexo, foto)
+		{
+			//definir el objeto
+			var o = this
+
+			//definición de atributos
+			o.nombre = nombre
+			o.raza = raza
+			o.edad = edad
+			o.sexo = sexo
+			o.foto = foto
+
+			//definición de métodos
+			o.aparecer = function () 
+			{
+				alert(o.nombre + ' aparece')
+			}
+
+			o.ladrar = function ()
+			{
+				alert('Guau guau!!!')
+			}
+
+			o.comer = function (comida)
+			{
+				alert(o.nombre + ' come ' + comida)
+			}
+		}
+
+		//Definición
+		function iniciar()
+		{
+			//alert('Hola Mundo desde JS')
+			var kenai = new Perro('Kenai', 'Firefox', 3, 'Macho', 'activos/kenai.jpg')
+
+			document.write('<p>' + kenai + '</p>')
+			document.write('<p>' + kenai.nombre + '</p>')
+			document.write('<p>' + kenai.raza + '</p>')
+			document.write('<p>' + kenai.edad + '</p>')
+			document.write('<p>' + kenai.sexo + '</p>')
+			document.write('<p>' + kenai.foto + '</p>')
+			kenai.aparecer()
+			kenai.ladrar()
+			kenai.comer('tacos')
+		}
+
+		//Ejecución
+		iniciar()
+	</script>
+</body>
+</html>
