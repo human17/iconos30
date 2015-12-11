@@ -27,7 +27,7 @@ La entrega puede ser vía email, dropbox, google drive, one drive o cualquier me
 * [Introducción a JS](http://librosweb.es/libro/javascript/)
 * [Introducción a AJAX](http://librosweb.es/libro/ajax/)
 * [Curso de Diseño y Programación Web de Bextlán](http://bextlan.com/cursos/web/)
-* [JavaScript The Good Parts](http://www.maritimejournal.com/__data/assets/pdf_file/0020/1033940/Javascript-The-Good-Parts.pdf)
+* [JavaScript The Good Parts](https://www.ebooks-it.net/ebook/javascript-the-good-parts)
 
 ## :school: Sesión 1: 5 Diciembre 2015
 
