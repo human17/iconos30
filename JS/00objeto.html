@@ -17,29 +17,46 @@
 		function Perro(nombre, raza, edad, sexo, foto)
 		{
 			//definir el objeto
-			var o = this
+			var o = this,
+				imagen = document.createElement('img')
 
 			//definición de atributos
-			o.nombre = nombre
-			o.raza = raza
-			o.edad = edad
-			o.sexo = sexo
-			o.foto = foto
+			o.nombre = nombre || 'Perro'
+			o.raza = raza || 'Sin Raza'
+			o.edad = edad || 'Edad desconicida'
+			o.sexo = sexo || 'Sexo desconocido'
+			o.foto = foto || 'No hay foto'
 
 			//definición de métodos
 			o.aparecer = function () 
 			{
 				alert(o.nombre + ' aparece')
+				imagen.src = o.foto
+				imagen.title = o.nombre
+
+				document.body.appendChild(imagen)
 			}
 
 			o.ladrar = function ()
 			{
 				alert('Guau guau!!!')
+				var audio = document.createElement('audio')
+				audio.src = 'activos/guau.mp3'
+				audio.controls = true
+				audio.play()
+				document.body.appendChild(audio)
 			}
 
 			o.comer = function (comida)
 			{
 				alert(o.nombre + ' come ' + comida)
+			}
+
+			o.mover = function ()
+			{
+				imagen.style.left = '50%'
+				imagen.style.position = 'relative'
+				imagen.style.borderRadius = '100%'
 			}
 		}
 
@@ -58,6 +75,7 @@
 			kenai.aparecer()
 			kenai.ladrar()
 			kenai.comer('tacos')
+			kenai.mover()
 		}
 
 		//Ejecución
