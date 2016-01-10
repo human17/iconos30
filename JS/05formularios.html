@@ -6,6 +6,15 @@
 	<meta name="description" content="En este ejercicio seguiremos entendiendo fundamentos de programación en JavaScript" />
 	<style>
 		body, html { font-family: Helvetica, sans-serif; font-size: 16px; }
+
+		:valid {
+			outline: thin solid green;
+		}
+
+		:invalid {
+			outline: thin solid red;
+		}
+		
 	</style>
 </head>
 <body>
@@ -17,7 +26,7 @@
 	<h2>Cadenas de Texto</h2>
 	<button id="escribe">Escribe algo</button>
 	<h2>Formularios</h2>
-	<form id="rfc">
+	<form id="rfc"	>
 		<fieldset>
 			<legend>Ingresa tus datos:</legend>
 			<div>
@@ -39,6 +48,35 @@
 			<div>
 				<label for="homoclave">Homoclave:</label>
 				<input type="text" id="homoclave" placeholder="deben ser 3 caractéres" />
+			</div>
+			<div>
+				<input type="submit" id="enviar" value="Generar RFC" />
+			</div>
+			<div id="respuesta"></div>
+		</fieldset>
+	</form>
+	<form id="rfc2">
+		<fieldset>
+			<legend>Ingresa tus datos:</legend>
+			<div>
+				<label for="nombre">Nombre(s):</label>
+				<input type="text" id="nombre2" placeholder="nombre(s)" required pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+" />
+			</div>
+			<div>
+				<label for="apaterno">Apellido Paterno:</label>
+				<input type="text" id="apaterno2" placeholder="apellido paterno" required pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+" />
+			</div>
+			<div>
+				<label for="amaterno">Apellido Materno:</label>
+				<input type="text" id="amaterno2" placeholder="apellido materno" required pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+" />
+			</div>
+			<div>
+				<label for="nacimiento">Fecha de Nacimiento:</label>
+				<input type="text" id="nacimiento2" placeholder="dd-mm-aaaa" required pattern="(0?[1-9]|[12][0-9]|3[01])[\-](0?[1-9]|1[012])[\-](19|20)\d{2}" />
+			</div>
+			<div>
+				<label for="homoclave">Homoclave:</label>
+				<input type="text" id="homoclave2" placeholder="deben ser 3 caractéres" required pattern="[\w][\w][\w]" />
 			</div>
 			<div>
 				<input type="submit" id="enviar" value="Generar RFC" />

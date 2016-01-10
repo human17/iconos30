@@ -110,3 +110,25 @@ Entender el concepto de algoritmos y diagramas de flujo, y ejecutar códigos JS 
 * [Arreglos asociativos y JSON](https://www.youtube.com/watch?v=5RMi1wAgweM) (Ver video y traer código)
 * [Trabajo con números y cadenas de texto](https://www.youtube.com/watch?v=pmvKwHgt7qc) (Ver video y traer código)
 * [Formularios, validación de datos y expresiones regulares](https://www.youtube.com/watch?v=ZnA10B_m-1k) (Ver video y traer código)
+
+
+## :school: Sesión 4: 09 Enero 2016
+
+### :chart_with_upwards_trend: Objetivo de la Sesión:
+Aprender a manipular información en JSON, detectar navegadores, plataformas y dispositivos con JS
+
+### :clipboard: Temas y conceptos aprendidos:
+* Arreglos Multidimensionales
+* JSON
+* Objeto Navigator
+* Atributo userAgent
+* Detección de Dispositivos, Plataformas y Navegadores
+
+### :globe_with_meridians: Links revisados en la sesión 3:
+* [JSON](http://json.org/json-es.html)
+* [Can I use?](http://caniuse.com/)
+* [Qué es el userAgent](http://www.whatsmyuseragent.com/WhatsAUserAgent)
+* [Lista de userAgent](http://www.useragentstring.com/)
+
+### :pencil: Actividades para la sesión 5:
+* [Leer Capítulo 7 Introducción a AJAX](http://librosweb.es/libro/ajax/capitulo_7.html)

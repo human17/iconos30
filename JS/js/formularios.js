@@ -47,8 +47,8 @@ function adivinarNumero()
 	else
 	{
 		//aleatorio = Math.random();
-		//aleatorio = Math.randMath.random()*10om()*10;
-		aleatorio = Math.round(Math.random()*10);
+		//aleatorio = Math.random()*10;
+		aleatorio = Math.round(Math.random()*100);
 
 		siAdivine = "¡Felicidades Adivinaste!, el número es "+aleatorio;
 		noAdivine = "¡Suerte para la próxima!, el número es "+aleatorio+" y tú elegiste "+numero;
