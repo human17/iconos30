@@ -1,0 +1,14 @@
+1) Ir a nodejs.org
+2) Instalar Node.js
+3) Abrir una terminal,
+	Si estas en Linux o Mac anteponer a todos los comandos 'sudo'
+	Si estas en windows abrir el cmd escribir powershell
+4) Comprobar que tenemos instalado node y npm
+	'node -v' me da la versión de node instalada
+	'npm -v' me da la versión de npm instalada
+5) instalar el paquete https://www.npmjs.com/package/http-server de manera global
+	'npm install http-server -g'
+6) Ir desde la terminal a la carpeta donde quiero ejecutar un servidor local
+7) Estando en la carpeta desde la terminal
+	'http-server'
+8) Ir a mi navegador y acceder a http://localhost:8080

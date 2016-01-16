@@ -132,3 +132,33 @@ Aprender a manipular información en JSON, detectar navegadores, plataformas y d
 
 ### :pencil: Actividades para la sesión 5:
 * [Leer Capítulo 7 Introducción a AJAX](http://librosweb.es/libro/ajax/capitulo_7.html)
+
+
+## :school: Sesión 5: 16 Enero 2016
+
+### :chart_with_upwards_trend: Objetivo de la Sesión:
+Entender el uso de JavaScript en entornos de servidor, AJAX y Geolocalización
+
+### :clipboard: Temas y conceptos aprendidos:
+* JS en el servidor
+* Uso de XAMPP como servidor local
+* AJAX
+* Geolocalización
+
+### :globe_with_meridians: Links revisados en la sesión 5:
+* [Can I use?](http://caniuse.com/)
+* [XAMPP](https://www.apachefriends.org/es/index.html)
+* [Introducción a AJAX](http://librosweb.es/ajax/capitulo_7/metodos_y_propiedades_del_objeto_xmlhttprequest.html)
+* [Estados HTTP](http://es.wikipedia.org/wiki/Anexo:Códigos_de_estado_HTTP)
+* [Extensiones MIME Wikipedia](http://es.wikipedia.org/wiki/Multipurpose_Internet_Mail_Extensions)
+* [Lista MIME Types](http://sites.utoronto.ca/webdocs/HTMLdocs/Book/Book-3ed/appb/mimetype.html)
+* [Geolocalización Ejemplo MDN](https://developer.mozilla.org/es/docs/Web/API/Geolocation/getCurrentPosition)
+
+1. Implementar en el Sitio (HTML y CSS) 5 interacciones justificadas JS
+2. Portafolio/Curriculum con las siguientes implementaciones
+	* Los datos personales implementarlos como Objeto
+	* Los datos académicos implementarlos como Arreglos
+	* Los datos laborales implementarlos como JSON
+	* Aplicar estilos y eventos dinamicamente con JS (mínimo 2 de c/u)
+	* Aplicar AJAX para cargar una versión imprimible del cv en pdf
+3. Para ambas entregas incluir un archivo readme.txt describiendo en que secciones se implementaron las interacciones JS, si no se incluye dicho archivo se restará un punto de la calificación final, además al no entregarlos el estudiante acepta la percepción del docente al evaluar dicho sitio
