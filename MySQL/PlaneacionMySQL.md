@@ -1,14 +1,14 @@
 # Materia: Sitios Web Dinámicos
 ![MySQL + PHP](http://bextlan.com/v4/themes/v4/img/cursos/poo-php-mysql.jpg)
 ## :chart_with_upwards_trend: Objetivo de la Materia:
-Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP y el gestor MySQL, para el desarrollo de bases de datos y su integración en sitios web dinámicos.
+Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP y el gestor MySQL, para el desarrollo de bases de datos y su integración en sitios web dinámicos. 
 ## :bow: Docente:
 * [Jonathan MirCha](http://jonmircha.com)
 * Instructor Web y Arquitecto de Front end
 * Fundador de **[Bextlán](http://bextlan.com)**
 * Maratonista :runner:
 * **[@jonmircha](https://twitter.com/jonmircha)**
-* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)**
+* **[jonmircha@gmail.com](mailto:jonmircha@gmail.com)** 
 ## :books: Fuentes bibliográficas del curso:
 * [Documentación Oficial de MySQL](http://dev.mysql.com/doc/)
 * [Documentación Oficial de PHP](http://php.net/manual/es/)
@@ -21,7 +21,8 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 
 
 ## :school: Sesión 1: 30 Enero 2016
-### :clipboard: Temas y conceptos revisados:
+
+### :clipboard: Temas y conceptos revisados: 
 * Base de Datos
 * Dato
 * Información
@@ -34,8 +35,9 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Herramientas de Gestión MySQL
 * Servidor Web
 * XAMPP
-* Análisis de la información de un sitio web
-### :pencil: Actividades para la siguiente sesión:
+* Análisis de la información de un sitio web 
+
+### :pencil: Actividades para la siguiente sesión: 
 * Que proyecto voy a desarrollar:
 	* Mapa de Sitio
 	* En una lista numerar la info que se desea almacenar (Lógica de Negocio)
@@ -51,19 +53,22 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 
 
 ## :school: Sesión 2: 06 Febrero 2016
-### :clipboard: Temas y conceptos revisados:
+
+### :clipboard: Temas y conceptos revisados: 
 * Modelo Entidad-Relación
 * Tipos de Relaciones
 * Normalización de BDs
 * Formas Normales
 * Herramientas de Modelado de Datos
-### :pencil: Actividades para la siguiente sesión:
+
+### :pencil: Actividades para la siguiente sesión: 
 * Lista de Tablas y Campos del Proyecto (Lógica de Negocio)
 * Modelo Entidad-Relación del Proyecto
 
 
 ## :school: Sesión 3: 13 Febrero 2016
-### :clipboard: Temas y conceptos revisados:
+
+### :clipboard: Temas y conceptos revisados: 
 * Sintaxis SQL
 	* Sentencias de Objetos
 	* Sentencias de Datos
@@ -75,13 +80,15 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 	* Relaciones de Tablas
 	* Normalización de BD
 	* Modelo Relacional de la BD
-### :pencil: Actividades para la siguiente sesión:
+
+### :pencil: Actividades para la siguiente sesión: 
 * Correcciones de la Lógica de Negocio y Modelo E-R
 * Esquema en SQL de la BD del Proyecto
 * Modelo Relacional de la BD del Proyecto
 
 
 ## :school: Sesión 4: 20 Febrero 2016
+
 ### :clipboard: Temas y conceptos revisados:
 * Inserción de Registros Iniciales
 	* Precarga de Catálogos
@@ -89,6 +96,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Operaciones CRUD del Proyecto
 	* Definición en la Lógica de Negocio
 	* Definición de Sentencias SQL
+
 ### :pencil: Actividades para la siguiente sesión:
 * Correcciones del Proyecto
 * Inserción de Registros de Catálogos
@@ -96,12 +104,14 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 
 
 ## :school: Sesión 5: 27 Febrero 2016
+
 ### :clipboard: Temas y conceptos revisados:
 * Sintaxis SQL Avanzada
 	* Consultas Múltiples (JOINS)
 	* Encriptación en MySQL
 	* Búsquedas FULLTEXT
 * Hospedaje Compartido y FTP
+
 ### :pencil: Actividades para la siguiente sesión:
 * [Conceptos Básicos de PHP](https://www.youtube.com/watch?v=9VyLJy6tNgI&index=2&list=PL469D93BF3AE1F84F)	
 * [Envío de Datos GET y POST](https://www.youtube.com/watch?v=uxi5zaqs_yc&index=3&list=PL469D93BF3AE1F84F)
@@ -114,7 +124,8 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 	2. Modelo Entidad-Relación (img)
 	3. Modelo Relacional de la Base de Datos (img y sql)
 	4. Base de Datos con 10 registros reales y todos los catálogos precargados (sql)
-	5. Queries CRUD de la lógica de negocio (sql)
+	5. Queries CRUD de la lógica de negocio (sql) 
+
 ## :date: Entrega:
 **Lunes 29 Febrero 2016 11:59:59pm**
 La entrega puede ser vía email, dropbox, google drive, zip en cualquier medio de transferencia de archivos al correo jonmircha@gmail.com
