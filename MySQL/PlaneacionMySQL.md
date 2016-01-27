@@ -74,6 +74,9 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 ### :clipboard: Temas y conceptos revisados: 
 * Sintaxis SQL
 	* Sentencias de Objetos
+		* Bases de Datos
+		* Tablas y Motores
+		* Usuarios y Privilegios
 	* Sentencias de Datos
 		* Concepto de CRUD
 		* Cláusulas Condicionales y de Ordenación
