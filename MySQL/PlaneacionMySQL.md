@@ -99,6 +99,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Operaciones CRUD del Proyecto
 	* Definición en la Lógica de Negocio
 	* Definición de Sentencias SQL
+* Restricciones CRUD por Integridad Referencial
 
 ### :pencil: Actividades para la siguiente sesión:
 * Correcciones del Proyecto
@@ -111,7 +112,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 ### :clipboard: Temas y conceptos revisados:
 * Sintaxis SQL Avanzada
 	* Consultas Múltiples (JOINS)
-	* Encriptación en MySQL
+	* Encriptación
 	* Búsquedas FULLTEXT
 * Hospedaje Compartido y FTP
 
