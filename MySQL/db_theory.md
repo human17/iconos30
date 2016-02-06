@@ -1,4 +1,4 @@
-# Base de Datos
+# Conceptos Básicos de Base de Datos
 ## Dato
 Mínima unidad de Información
 Es un valor (numérico, alfabético, algorítmico, espacial, etc)  que por sí sólo no dice mucho
@@ -35,8 +35,15 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 
 ## Tipos 
 * SQL (Structured Query Languaje)
-	* Transaccionales: Access, MySQL, MariaDB, Oracle, MS SQL, PostgreSQL, Informix
+	* Transaccionales: Access, MySQL, MariaDB, Oracle, MS SQL Server, PostgreSQL, Informix
 * NoSQL (Not only SQL)
 	* Documentales (BSON): MongoDB, RethinkDB
 	* Clave-Valor: Redis, Cassandra
 	* De Grafos: Neo4j, GraphDB
+
+# Conceptos de BDs SQL
+* Una BD tiene Tablas
+* Una Tabla tiene Campos(columnas) y Registros(filas)
+	* El conjunto de campos genera un Registro
+	* Campo - un dato que no dice mucho
+	* Registro - conjunto de campos que genera información
