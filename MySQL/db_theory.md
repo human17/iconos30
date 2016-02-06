@@ -47,3 +47,26 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 	* El conjunto de campos genera un Registro
 	* Campo - un dato que no dice mucho
 	* Registro - conjunto de campos que genera información
+
+# Herramientas de Gestión MySQL
+## Terminal de comandos
+* cd c:/xampp/mysql/bin
+* mysql -u root -p
+* SHOW DATABASES;
+* USE nombre_bd;
+* SHOW TABLES;
+* DESCRIBE nombre_tabla
+* SHOW COLUMNS FROM nombre_tabla
+* SELECT campos_tabla FROM nombre_tabla;
+* SELECT * FROM nombre_tabla;
+
+## WebApp
+* [phpMyAdmin](https://www.phpmyadmin.net/) teniendo [XAMPP](http://localhost/phpmyadmin)
+
+## Software
+* [MySQL WorkBench](https://www.mysql.com/products/workbench/) (libre)
+* [Navicat](http://www.navicat.com/es) (pago)
+
+## Documentación MySQL
+* [Documentación Oficial de MySQL](http://dev.mysql.com/doc/)
+* [MySQL con Clase](http://mysql.conclase.net/curso/index.php)
