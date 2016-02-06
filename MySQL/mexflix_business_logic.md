@@ -4,7 +4,7 @@
 	imdb_id,
 	title,
 	plot,
-	genres,
+	genres, (catalog)
 	author,
 	actors,
 	premiere,
@@ -12,7 +12,7 @@
 	poster,
 	rating,
 	country,
-	category, (list)
+	category, (catalog)
 	status (catalog)
 
 ## seasons
