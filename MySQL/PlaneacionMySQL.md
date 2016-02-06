@@ -23,7 +23,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 #Módulo MySQL
 
 
-## :school: Sesión 1: 30 Enero 2016
+## :school: Sesión 1: 06 Febrero 2016
 
 ### :clipboard: Temas y conceptos revisados: 
 * Base de Datos
@@ -55,7 +55,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Analizar la información de un sitio web
 
 
-## :school: Sesión 2: 06 Febrero 2016
+## :school: Sesión 2: 13 Febrero 2016
 
 ### :clipboard: Temas y conceptos revisados: 
 * Modelo Entidad-Relación
@@ -69,7 +69,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Modelo Entidad-Relación del Proyecto
 
 
-## :school: Sesión 3: 13 Febrero 2016
+## :school: Sesión 3: 20 Febrero 2016
 
 ### :clipboard: Temas y conceptos revisados: 
 * Sintaxis SQL
@@ -93,7 +93,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Modelo Relacional de la BD del Proyecto
 
 
-## :school: Sesión 4: 20 Febrero 2016
+## :school: Sesión 4: 27 Febrero 2016
 
 ### :clipboard: Temas y conceptos revisados:
 * Inserción de Registros Iniciales
@@ -110,7 +110,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 * Inserción de Registros de Datos (por lo menos 5 completos)
 
 
-## :school: Sesión 5: 27 Febrero 2016
+## :school: Sesión 5:  05 Marzo 2016
 
 ### :clipboard: Temas y conceptos revisados:
 * Sintaxis SQL Avanzada
@@ -134,5 +134,5 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 	5. Queries CRUD de la lógica de negocio (sql) 
 
 ## :date: Entrega:
-**Lunes 29 Febrero 2016 11:59:59pm**
+**Lunes 07 Marzo 2016 11:59:59pm**
 La entrega puede ser vía email, dropbox, google drive, zip en cualquier medio de transferencia de archivos al correo jonmircha@gmail.com
