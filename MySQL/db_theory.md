@@ -248,10 +248,10 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  ---------------------------------
 | mxa_id | alumno_id | materia_id |
-| 1		 | 1	     | 1          |
-| 2		 | 1	     | 2          |
-| 3		 | 2	     | 1          |
-| 4		 | 2	     | 2          |
+| 1		 | 1		 | 1		  |
+| 2		 | 1		 | 2		  |
+| 3		 | 1		 | 1		  |
+| 4		 | 1		 | 2		  |
  ---------------------------------
 
 ## Quinta Forma Normal:
