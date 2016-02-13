@@ -167,6 +167,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  -----------------------------------------
 | materia_id | alumno_id | materia_nombre |
+| ---------- | --------- | -------------- |
 | 1			 | 1	     | MySQL          |
 | 2			 | 1	     | PHP            |
 | 3			 | 2	     | MySQL          |
@@ -207,6 +208,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  -----------------------------------------
 | materia_id | alumno_id | materia_nombre |
+| ---------- | --------- | ---------- |
 | 1			 | 1	     | MySQL          |
 | 2			 | 1	     | PHP            |
 | 3			 | 2	     | MySQL          |
@@ -240,6 +242,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  -----------------------------
 | materia_id | materia_nombre |
+| ---------- | -------------- |
 | 1			 | MySQL          |
 | 2			 | PHP            |
  -----------------------------
@@ -248,14 +251,13 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  ---------------------------------
 | mxa_id | alumno_id | materia_id |
+| ------ | --------- | ---------- |
 | 1		 | 1		 | 1		  |
- ---------------------------------
-
-
-
 | 2		 | 1		 | 2		  |
 | 3		 | 1		 | 1		  |
 | 4		 | 1		 | 2		  |
+ ---------------------------------
+
 ## Quinta Forma Normal:
 
 * Se debe aplicar la 1FN, 2FN, 3FN y 4FN
