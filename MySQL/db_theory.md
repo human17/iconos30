@@ -125,7 +125,9 @@ Existen 3 niveles de normalización que deben respetarse para poder decir que nu
 Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
 ## Sin Normalizar:
+
 **ALUMNOS**
+
  -------------------------------------------------------------------- 
 | alumno  |	estudio_nivel |	estudio_nombre	 | materia_1 | materia_2 |
 | ------- | ------------- | ---------------- | --------- | --------- |
@@ -137,6 +139,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 * NO repetir campos en las tablas (atributos atómicos)
 
 **ALUMNOS**
+
  ------------------------------------------------------------------------
 | alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   | materia |
 | --------- | ------------- | ------------- | ---------------- | ------- |
@@ -147,10 +150,12 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  ------------------------------------------------------------------------
 
 ## Segunda Forma Normal:
+
 * Se debe aplicar la 1FN
 * Cada campo de la tabla debe depender de una clave única, si tuvieramos alguna columna que se repite a lo largo de todos los registros, dichos datos deberian atomizarse en una nueva tabla
 
 **ALUMNOS**
+
  --------------------------------------------------------------
 | alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   |
 | --------- | ------------- | ------------- | ---------------- |
@@ -159,6 +164,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  --------------------------------------------------------------
 
 **MATERIAS**
+
  -----------------------------------------
 | materia_id | alumno_id | materia_nombre |
 | 1			 | 1	     | MySQL          |
@@ -168,16 +174,19 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  -----------------------------------------
 
 ## Tercera Forma Normal:
+
 * Se debe aplicar la 1FN y 2FN
 * Los campos que NO son clave NO deben tener dependencias
 
 ## Forma Normal Boyce-Codd (FNBC)
+
 * Se debe aplicar la 1FN, 2FN y 3FN
 * Es una versión mejorada de la 3FN
 * Los campos que NO son clave NO deben tener dependencias
 * Los campos que NO dependan de la clave se deben eliminar
 
 **ALUMNOS**
+
  ----------------------------------------
 | alumno_id	| alumno_nombre | estudio_id |
 | --------- | ------------- | ---------- |
@@ -186,6 +195,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  ----------------------------------------
 
 **ESTUDIOS**
+
  -----------------------------------------------
 | estudio_id | estudio_nivel | estudio_nombre   |
 | ---------- | ------------- | ---------------- |
@@ -194,6 +204,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  -----------------------------------------------
 
 **MATERIAS**
+
  -----------------------------------------
 | materia_id | alumno_id | materia_nombre |
 | 1			 | 1	     | MySQL          |
@@ -203,10 +214,12 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  -----------------------------------------
 
 ## Cuarta Forma Normal:
+
 * Se debe aplicar la FNBC
 * La 4FN aplica únicamente para relaciones M a M, y nos ayuda a eliminar la redundancia de información generada por dicho tipo de relación
 
 **ALUMNOS**
+
  ----------------------------------------
 | alumno_id	| alumno_nombre | estudio_id |
 | --------- | ------------- | ---------- |
@@ -215,6 +228,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  ----------------------------------------
 
 **ESTUDIOS**
+
  -----------------------------------------------
 | estudio_id | estudio_nivel | estudio_nombre   |
 | ---------- | ------------- | ---------------- |
@@ -223,6 +237,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  -----------------------------------------------
 
 **MATERIAS**
+
  -----------------------------
 | materia_id | materia_nombre |
 | 1			 | MySQL          |
@@ -230,6 +245,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  -----------------------------
 
 **MATERIAS X ALUMNO**
+
  ---------------------------------
 | mxa_id | alumno_id | materia_id |
 | 1		 | 1	     | 1          |
@@ -239,6 +255,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
  ---------------------------------
 
 ## Quinta Forma Normal:
+
 * Se debe aplicar la 1FN, 2FN, 3FN y 4FN
 * Existe otro nivel de normalización que se aplica con poca frecuencia y en la mayoria de los casos no es necesario para obtener la mejor funcionalidad de nuestra estructura de datos. Su principio sugiere:
 
