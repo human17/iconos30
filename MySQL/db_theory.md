@@ -154,8 +154,6 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 | alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   |
 | --------- | ------------- | ------------- | ---------------- |
 | 1			| Juanito		| Maestría		| Medios Virtuales |
-| 1			| Juanito		| Maestría		| Medios Virtuales |
-| 2			| Pepito		| Licenciatura	| Diseño Digital   |
 | 2			| Pepito		| Licenciatura	| Diseño Digital   |
  --------------------------------------------------------------
 
@@ -226,6 +224,8 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 **MATERIAS**
  -----------------------------
 | materia_id | materia_nombre |
+| 1			 | MySQL          |
+| 2			 | PHP            |
  -----------------------------
 
 **MATERIAS X ALUMNO**
