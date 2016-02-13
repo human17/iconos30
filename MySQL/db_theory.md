@@ -208,7 +208,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
  -----------------------------------------
 | materia_id | alumno_id | materia_nombre |
-| ---------- | --------- | ---------- |
+| ---------- | --------- | -------------- |
 | 1			 | 1	     | MySQL          |
 | 2			 | 1	     | PHP            |
 | 3			 | 2	     | MySQL          |

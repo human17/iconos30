@@ -67,6 +67,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 ### :pencil: Actividades para la siguiente sesión: 
 * Lista de Tablas y Campos del Proyecto (Lógica de Negocio)
 * Modelo Entidad-Relación del Proyecto
+* Excel con Registros de Información (mínimo 10)
 
 
 ## :school: Sesión 3: 20 Febrero 2016
