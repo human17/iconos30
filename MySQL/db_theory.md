@@ -264,3 +264,4 @@ La tabla original debe ser reconstruida desde las tablas resultantes en las cual
 Los beneficios de aplicar la 5FN asegura que no se haya creado ninguna columna extraña en las tablas y que su estructura sea del tamaño justo que tiene que ser
 
 Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja estructura de datos, en modelos pequeños no se recomienda usar
+
