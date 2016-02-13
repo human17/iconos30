@@ -41,12 +41,14 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 	* Clave-Valor: Redis, Cassandra
 	* De Grafos: Neo4j, GraphDB
 
+
 # Conceptos de BDs SQL
 * Una BD tiene Tablas
 * Una Tabla tiene Campos(columnas) y Registros(filas)
 	* El conjunto de campos genera un Registro
 	* Campo - un dato que no dice mucho
 	* Registro - conjunto de campos que genera información
+
 
 # Herramientas de Gestión MySQL
 ## Terminal de comandos
@@ -70,6 +72,7 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 ## Documentación MySQL
 * [Documentación Oficial de MySQL](http://dev.mysql.com/doc/)
 * [MySQL con Clase](http://mysql.conclase.net/curso/index.php)
+
 
 # Modelo Entidad-Relación
 Es un diagrama que permite representar las entidades relevantes de un sistema de información así como sus interrelaciones y propiedades
@@ -101,3 +104,147 @@ Elementos del Modelo Entidad-Relación
 * [Gliffy](https://www.gliffy.com/)
 * [Lucidchart](https://www.lucidchart.com/)
 * [Cacoo](https://cacoo.com/)
+
+
+# Normalización de BDs
+El proceso de normalización de bases de datos consiste en designar y aplicar una serie de reglas a las relaciones obtenidas tras el modelo entidad-relación
+
+Las bases de datos relacionales se normalizan para:
+* Evitar la redundancia de los datos
+* Disminuir problemas de actualización de los datos en las tablas
+* Proteger la integridad de los datos
+		
+Para que las tablas de nuestra BD estén normalizadas deben cumplir las siguientes reglas:
+* Cada tabla debe tener su nombre único
+* No puede haber dos filas iguales
+* No se permiten los duplicados
+* Todos los datos en una columna deben ser del mismo tipo
+
+Existen 3 niveles de normalización que deben respetarse para poder decir que nuestra BDs, se encuentra NORMALIZADA, es decir, que cumple con los requisitos naturales para funcionar optimamente y no perjudicar el rendimiento por mala arquitectura
+
+Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
+
+## Sin Normalizar:
+**ALUMNOS**
+ -------------------------------------------------------------------- 
+| alumno  |	estudio_nivel |	estudio_nombre	 | materia_1 | materia_2 |
+| ------- | ------------- | ---------------- | --------- | --------- |
+| Juanito |	Maestría	  | Medios Virtuales | MySQL	 | PHP       |
+| Pepito  |	Licenciatura  |	Diseño Digital	 | MySQL	 | PHP       |
+ -------------------------------------------------------------------- 
+
+## Primera Forma Normal:
+* NO repetir campos en las tablas (atributos atómicos)
+**ALUMNOS**
+ ------------------------------------------------------------------------
+| alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   | materia |
+| --------- | ------------- | ------------- | ---------------- | ------- |
+| 1			| Juanito		| Maestría		| Medios Virtuales | MySQL   |
+| 1			| Juanito		| Maestría		| Medios Virtuales | PHP     |
+| 2			| Pepito		| Licenciatura	| Diseño Digital   | MySQL   |
+| 2			| Pepito		| Licenciatura	| Diseño Digital   | PHP     |
+ ------------------------------------------------------------------------
+
+## Segunda Forma Normal:
+* Se debe aplicar la 1FN
+* Cada campo de la tabla debe depender de una clave única, si tuvieramos alguna columna que se repite a lo largo de todos los registros, dichos datos deberian atomizarse en una nueva tabla
+
+**ALUMNOS**
+ --------------------------------------------------------------
+| alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   |
+| --------- | ------------- | ------------- | ---------------- |
+| 1			| Juanito		| Maestría		| Medios Virtuales |
+| 1			| Juanito		| Maestría		| Medios Virtuales |
+| 2			| Pepito		| Licenciatura	| Diseño Digital   |
+| 2			| Pepito		| Licenciatura	| Diseño Digital   |
+ --------------------------------------------------------------
+
+**MATERIAS**
+ -----------------------------------------
+| materia_id | alumno_id | materia_nombre |
+| 1			 | 1	     | MySQL          |
+| 2			 | 1	     | PHP            |
+| 3			 | 2	     | MySQL          |
+| 4			 | 2	     | PHP            |
+ -----------------------------------------
+
+## Tercera Forma Normal:
+* Se debe aplicar la 1FN y 2FN
+* Los campos que NO son clave NO deben tener dependencias
+
+## Forma Normal Boyce-Codd (FNBC)
+* Se debe aplicar la 1FN, 2FN y 3FN
+* Es una versión mejorada de la 3FN
+* Los campos que NO son clave NO deben tener dependencias
+* Los campos que NO dependan de la clave se deben eliminar
+
+**ALUMNOS**
+ ----------------------------------------
+| alumno_id	| alumno_nombre | estudio_id |
+| --------- | ------------- | ---------- |
+| 1			| Juanito		| 1     	 |
+| 2			| Pepito		| 2		 	 |
+ ----------------------------------------
+
+**ESTUDIOS**
+ -----------------------------------------------
+| estudio_id | estudio_nivel | estudio_nombre   |
+| ---------- | ------------- | ---------------- |
+| 1			 | Maestría		 | Medios Virtuales |
+| 2			 | Licenciatura	 | Diseño Digital   |
+ -----------------------------------------------
+
+**MATERIAS**
+ -----------------------------------------
+| materia_id | alumno_id | materia_nombre |
+| 1			 | 1	     | MySQL          |
+| 2			 | 1	     | PHP            |
+| 3			 | 2	     | MySQL          |
+| 4			 | 2	     | PHP            |
+ -----------------------------------------
+
+## Cuarta Forma Normal:
+* Se debe aplicar la FNBC
+* La 4FN aplica únicamente para relaciones M a M, y nos ayuda a eliminar la redundancia de información generada por dicho tipo de relación
+
+**ALUMNOS**
+ ----------------------------------------
+| alumno_id	| alumno_nombre | estudio_id |
+| --------- | ------------- | ---------- |
+| 1			| Juanito		| 1     	 |
+| 2			| Pepito		| 2		 	 |
+ ----------------------------------------
+
+**ESTUDIOS**
+ -----------------------------------------------
+| estudio_id | estudio_nivel | estudio_nombre   |
+| ---------- | ------------- | ---------------- |
+| 1			 | Maestría		 | Medios Virtuales |
+| 2			 | Licenciatura	 | Diseño Digital   |
+ -----------------------------------------------
+
+**MATERIAS**
+ -----------------------------
+| materia_id | materia_nombre |
+| 1			 | MySQL          |
+| 2			 | PHP            |
+ -----------------------------
+
+**MATERIAS X ALUMNO**
+ ---------------------------------
+| mxa_id | alumno_id | materia_id |
+| 1		 | 1	     | 1          |
+| 2		 | 1	     | 2          |
+| 3		 | 2	     | 1          |
+| 4		 | 2	     | 2          |
+ ---------------------------------
+
+## Quinta Forma Normal:
+* Se debe aplicar la 1FN, 2FN, 3FN y 4FN
+* Existe otro nivel de normalización que se aplica con poca frecuencia y en la mayoria de los casos no es necesario para obtener la mejor funcionalidad de nuestra estructura de datos. Su principio sugiere:
+
+La tabla original debe ser reconstruida desde las tablas resultantes en las cuales ha sido partida
+
+Los beneficios de aplicar la 5FN asegura que no se haya creado ninguna columna extraña en las tablas y que su estructura sea del tamaño justo que tiene que ser
+
+Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja estructura de datos, en modelos pequeños no se recomienda usar
