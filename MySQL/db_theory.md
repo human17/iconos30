@@ -70,3 +70,34 @@ Son rutinas que realizan entradas de datos, consultas a los datos, generación d
 ## Documentación MySQL
 * [Documentación Oficial de MySQL](http://dev.mysql.com/doc/)
 * [MySQL con Clase](http://mysql.conclase.net/curso/index.php)
+
+# Modelo Entidad-Relación
+Es un diagrama que permite representar las entidades relevantes de un sistema de información así como sus interrelaciones y propiedades
+
+Formalmente, los diagramas ER son un lenguaje gráfico para describir conceptos. Informalmente, son simples dibujos o gráficos que describen información que trata un sistema de información y el software que lo automatiza
+
+Elementos del Modelo Entidad-Relación
+	* **Entidades**
+		Son objetos distinguible del resto; pe en un sistema bancario, las personas y las cuentas son entidades. Éstas pueden ser entes concretos, como una persona o un avión, o abstractas, como un préstamo o una reserva. Se representan por medio de un rectángulo
+
+	* **Atributos**
+		Con propiedades de las entidades. Se representan mediante un círculo o elipse, cuando un atributo es identificativo de la entidad se subraya
+
+	* **Relación**
+		Describe la dependencia entre entidades o permite la asociación de las mismas; pe tenemos 2 entidades CLIENTE y HABITACIÓN, una relación sería que el cliente 'Pepito' tiene 'ocupada' la habitación '519'. Se representan por medio de un verbo de acción dentro de un rombo que une entidades
+
+## Tipos de Relaciones:
+	* **1 a 1**
+		Un esposo(e) está casado(r) con una única esposa(e) y viceversa
+	* **1 a M**
+		Una factura(e) se emite (r) a una persona(e) y sólo a una, pero una persona(e) puede tener(r) varias facturas(e) emitidas a su nombre. Todas las facturas(e) se emiten(r) a nombre de alguien(e)
+	* **M a M**
+		Un cliente(e) puede comprar(r) varios productos(e) y un producto(e) puede ser comprado(r) por varios clientes(e)
+
+## Herramientas para modelar:
+* Cuaderno y Lápiz
+* Microsoft Visio
+* Cualquier Software de Diseño
+* [Gliffy](https://www.gliffy.com/)
+* [Lucidchart](https://www.lucidchart.com/)
+* [Cacoo](https://cacoo.com/)
