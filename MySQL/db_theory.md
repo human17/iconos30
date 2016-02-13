@@ -135,6 +135,7 @@ Estas 3 reglas de Normalización se les conoce como las 3 FORMAS NORMALES:
 
 ## Primera Forma Normal:
 * NO repetir campos en las tablas (atributos atómicos)
+
 **ALUMNOS**
  ------------------------------------------------------------------------
 | alumno_id	| alumno_nombre | estudio_nivel | estudio_nombre   | materia |
