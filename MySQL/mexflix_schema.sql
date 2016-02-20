@@ -1,9 +1,16 @@
 /*Comentarios en SQL*/
 /*mexflix_schema.sql*/
 
-CREATE DATABASE IF NOT EXISTS mexflix;
+/*DROP DATABASE IF EXISTS mexflix30;*/
 
-USE mexflix;
+CREATE DATABASE IF NOT EXISTS mexflix30;
+
+USE mexflix30;
+
+CREATE TABLE status(
+	status_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	status VARCHAR(20) NOT NULL
+);
 
 CREATE TABLE movieseries(
 	imdb_id CHAR(9) PRIMARY KEY,
@@ -20,10 +27,15 @@ CREATE TABLE movieseries(
 	category ENUM('Movie','Serie') NOT NULL,
 	status INTEGER UNSIGNED NOT NULL,
 	FULLTEXT KEY search(title, genres, author, actors),
-	FOREIGN KEY (status) REFERENCES status(status_id)
+	FOREIGN KEY (status) REFERENCES status(status_id) 
+		ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
-CREATE TABLE status(
-	status_id INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-	status VARCHAR(20) NOT NULL
+CREATE TABLE users(
+	user VARCHAR(15) PRIMARY KEY,
+	email VARCHAR(80) UNIQUE NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	birthday DATE NOT NULL,
+	pass CHAR (32) NOT NULL,
+	role ENUM('Admin', 'User') NOT NULL
 );
