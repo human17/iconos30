@@ -19,7 +19,8 @@ CREATE TABLE movieseries(
 	genres VARCHAR(50) NOT NULL,
 	category ENUM('Movie','Serie') NOT NULL,
 	status INTEGER UNSIGNED NOT NULL,
-	FULLTEXT KEY search(title, genres, author, actors)
+	FULLTEXT KEY search(title, genres, author, actors),
+	FOREIGN KEY (status) REFERENCES status(status_id)
 );
 
 CREATE TABLE status(

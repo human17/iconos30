@@ -285,14 +285,7 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 	ALTER TABLE [ADD COLUMN || DROP COLUMN || MODIFY]
 	DESCRIBE
 
-### Motores de Tablas
-* [MyISAM vs InnoDB](http://www.webreunidos.es/blog/myisam-vs-innodb/)
-* [¿Qué motor elegir?](http://blog.arsys.es/myisam-o-innodb-elige-tu-motor-de-almacenamiento-mysql/)
-* [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
-
 ### Usuarios
-[Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
-
 	CREATE USER my_user IDENTIFIED BY 'my_password';
 	SELECT PASSWORD('my_password'); //contaseña en hash
 	CREATE USER my_user IDENTIFIED BY PASSWORD 'clave hash';
@@ -303,5 +296,21 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 	SHOW GRANTS for 'my_user'@'my_host';
 	REVOKE [PRIVILEGES], GRANT OPTION FROM 'my_user'@'my_host';
 	FLUSH PRIVILEGES;
+
+### Más info interesante sobre objetos
+* Motores de Tablas
+	* [MyISAM vs InnoDB](http://www.webreunidos.es/blog/myisam-vs-innodb/)
+	* [¿Qué motor elegir?](http://blog.arsys.es/myisam-o-innodb-elige-tu-motor-de-almacenamiento-mysql/)
+	* [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
+* [Usuarios y Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
+* [Tipos de Datos en MySQL](http://mysql.conclase.net/curso/index.php?cap=005#)
+* [Búsquedas FULLTEXT](http://dev.mysql.com/doc/internals/en/full-text-search.html)
+* [Restricciones](http://blog.openalfa.com/como-trabajar-con-restricciones-de-clave-externa-en-mysql)
+	* ON DELETE y ON UPDATE
+		* RESTRICT
+		* CASCADE
+		* SET NULL
+		* NO ACTION
+* [Encriptación](http://dev.mysql.com/doc/refman/5.7/en/encryption-functions.html)
 
 ## Sentencias de Datos
