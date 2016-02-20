@@ -292,10 +292,11 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 
 ### Usuarios
 * [Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
-		CREATE USER my_user IDENTIFIED BY 'my_password';
-		SELECT PASSWORD('my_password'); //contaseña en hash
-		CREATE USER my_user IDENTIFIED BY PASSWORD 'clave hash';
-		DROP USER my_user;
+
+	CREATE USER my_user IDENTIFIED BY 'my_password';
+	SELECT PASSWORD('my_password'); //contaseña en hash
+	CREATE USER my_user IDENTIFIED BY PASSWORD 'clave hash';
+	DROP USER my_user;
 
 ### Privilegios
 	GRANT ALL PRIVILEGES ON data_base.table TO 'my_user'@'my_host' -> IDENTIFIED BY 'my_password' WITH GRANT OPTION;
