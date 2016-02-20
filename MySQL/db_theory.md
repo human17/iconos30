@@ -286,9 +286,9 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 	DESCRIBE
 
 ### Motores de Tablas
-	* [MyISAM vs InnoDB](http://www.webreunidos.es/blog/myisam-vs-innodb/)
-	* [¿Qué motor elegir?](http://blog.arsys.es/myisam-o-innodb-elige-tu-motor-de-almacenamiento-mysql/)
-	* [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
+* [MyISAM vs InnoDB](http://www.webreunidos.es/blog/myisam-vs-innodb/)
+* [¿Qué motor elegir?](http://blog.arsys.es/myisam-o-innodb-elige-tu-motor-de-almacenamiento-mysql/)
+* [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
 
 ### Usuarios
 	* [Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
