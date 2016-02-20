@@ -291,7 +291,7 @@ Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
 * [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
 
 ### Usuarios
-* [Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
+[Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
 
 	CREATE USER my_user IDENTIFIED BY 'my_password';
 	SELECT PASSWORD('my_password'); //contaseña en hash
