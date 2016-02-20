@@ -268,3 +268,39 @@ La tabla original debe ser reconstruida desde las tablas resultantes en las cual
 Los beneficios de aplicar la 5FN asegura que no se haya creado ninguna columna extraña en las tablas y que su estructura sea del tamaño justo que tiene que ser
 
 Es una buena práctica aplicar la 5FN, cuando tenemos una extensa y compleja estructura de datos, en modelos pequeños no se recomienda usar
+
+# Sintaxis SQL
+## Sentencias de Objetos
+Objetos básicos en SQL: Bases de Datos, Tablas y Usuarios (y sus Privilegios)
+		
+### Bases de Datos
+	CREATE DATABASE
+	DROP DATABASE
+	SHOW DATABASES
+	USE		
+		
+### Tablas
+	CREATE TABLE
+	DROP TABLE
+	ALTER TABLE [ADD COLUMN || DROP COLUMN || MODIFY]
+	DESCRIBE
+
+### Motores de Tablas
+	* [MyISAM vs InnoDB](http://www.webreunidos.es/blog/myisam-vs-innodb/)
+	* [¿Qué motor elegir?](http://blog.arsys.es/myisam-o-innodb-elige-tu-motor-de-almacenamiento-mysql/)
+	* [Diferencias](http://blog.openalfa.com/diferencias-entre-innodb-y-myisam-en-mysql)
+
+### Usuarios
+	* [Asignación de Privilegios](http://rm-rf.es/usuario-mysql-como-crear-borrar-y-asignar-privilegios/)
+		CREATE USER my_user IDENTIFIED BY 'my_password';
+		SELECT PASSWORD('my_password'); //contaseña en hash
+		CREATE USER my_user IDENTIFIED BY PASSWORD 'clave hash';
+		DROP USER my_user;
+
+### Privilegios
+	GRANT ALL PRIVILEGES ON data_base.table TO 'my_user'@'my_host' -> IDENTIFIED BY 'my_password' WITH GRANT OPTION;
+	SHOW GRANTS for 'my_user'@'my_host';
+	REVOKE [PRIVILEGES], GRANT OPTION FROM 'my_user'@'my_host';
+	FLUSH PRIVILEGES;
+
+## Sentencias de Datos
