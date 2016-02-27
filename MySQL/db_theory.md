@@ -383,12 +383,6 @@ Siempre agregar la clausula WHERE para evitar eliminar toda la tabla
 ### CONSULTAS MÚLTIPLES
 Datos de 2 o más tablas
 
-* [Definición de Join](https://es.wikipedia.org/wiki/Join)
-* [Tipos de Joins](http://www.nebaris.com/post/77/tipos-de-join-en-sql)
-* [Joins de Manera Gráfica](http://www.genbetadev.com/bases-de-datos/explicacion-grafica-de-los-join-en-sql-y-sus-resultados)
-
- 
-	
 	SELECT * FROM table1 AS t1 
 		INNER JOIN table2 AS t2
 
@@ -403,6 +397,10 @@ Datos de 2 o más tablas
 
 		WHERE t1.field1 = 'a_value'
 		ORDER BY t1.field3 DESC
+
+* [Definición de Join](https://es.wikipedia.org/wiki/Join)
+* [Tipos de Joins](http://www.nebaris.com/post/77/tipos-de-join-en-sql)
+* [Joins de Manera Gráfica](http://www.genbetadev.com/bases-de-datos/explicacion-grafica-de-los-join-en-sql-y-sus-resultados)
 
 ### CONSULTAS FULLTEXT KEY
 
