@@ -374,6 +374,7 @@ Siempre agregar la clausula WHERE para evitar actualizar toda la tabla
 
 ### DELETE
 Siempre agregar la clausula WHERE para evitar eliminar toda la tabla
+
 **[NO TE OLVIDES DEL WHERE EN EL DELETE FROM](https://www.youtube.com/watch?v=i_cVJgIz_Cs)**
 
 	DELETE FROM table WHERE field = value
