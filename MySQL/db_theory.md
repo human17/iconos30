@@ -378,3 +378,24 @@ Siempre agregar la clausula WHERE para evitar eliminar toda la tabla
 **[NO TE OLVIDES DEL WHERE EN EL DELETE FROM](https://www.youtube.com/watch?v=i_cVJgIz_Cs)**
 
 	DELETE FROM table WHERE field = value
+
+### CONSULTAS MÚLTIPLES
+Datos de 2 o más tablas
+* [Definición de Join](https://es.wikipedia.org/wiki/Join)
+* [Tipos de Joins](http://www.nebaris.com/post/77/tipos-de-join-en-sql)
+* [Joins de Manera Gráfica](http://www.genbetadev.com/bases-de-datos/explicacion-grafica-de-los-join-en-sql-y-sus-resultados)
+			
+	SELECT * FROM table1 AS t1 
+		INNER JOIN table2 AS t2
+
+	SELECT * FROM table1 AS t1 
+		INNER JOIN table2 AS t2
+		ON t1.a_field = t2.a_field
+
+	SELECT t1.field1, t1.field2, t1.field3, t2.field1, t2.field5
+		FROM table1 AS t1 
+		INNER JOIN table2 AS t2
+		ON t1.field1 = t2.field5
+
+		WHERE t1.field1 = 'a_value'
+		ORDER BY t1.field3 DESC
