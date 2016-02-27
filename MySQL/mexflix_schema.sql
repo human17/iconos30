@@ -36,6 +36,6 @@ CREATE TABLE users(
 	email VARCHAR(80) UNIQUE NOT NULL,
 	name VARCHAR(100) NOT NULL,
 	birthday DATE NOT NULL,
-	pass CHAR (32) NOT NULL,
+	pass CHAR(32) NOT NULL,
 	role ENUM('Admin', 'User') NOT NULL
 );
