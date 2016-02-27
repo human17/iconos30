@@ -34,3 +34,61 @@ SELECT title, category, country, genres, premiere, status FROM movieseries WHERE
 SELECT title, category, country, genres, premiere, status FROM movieseries WHERE category = 'Movie' AND country LIKE 'USA%' ORDER BY premiere;
 
 SELECT title, category, country, genres, premiere, status FROM movieseries WHERE category = 'Movie' AND country LIKE '%USA%' ORDER BY premiere;
+
+/* CONSULTAS MÚLTIPLES */
+SELECT * FROM movieseries AS ms
+	INNER JOIN status AS s;
+
+SELECT ms.title, s.status FROM movieseries AS ms
+	INNER JOIN status AS s
+	ON ms.status = s.status_id;
+
+SELECT ms.title/*, ms.category*/, ms.country, ms.genres, ms.premiere, s.status
+	FROM movieseries AS ms 
+	INNER JOIN status AS s 
+	ON ms.status = s.status_id
+	ORDER BY ms.premiere DESC;
+
+SELECT ms.title, ms.country, ms.genres, ms.premiere, s.status
+	FROM movieseries AS ms 
+	INNER JOIN status AS s 
+	ON ms.status = s.status_id
+	WHERE s.status = 'Canceled'
+	ORDER BY ms.premiere DESC;
+
+SELECT ms.title, ms.country, ms.genres, ms.premiere, s.status
+	FROM movieseries AS ms 
+	INNER JOIN status AS s 
+	ON ms.status = s.status_id
+	WHERE (s.status = 'canceled' OR s.status = 'coming Soon')
+	 AND country != 'USA'
+	ORDER BY ms.premiere DESC;
+
+SELECT ms.title, ms.country, ms.genres, ms.premiere, s.status
+	FROM movieseries AS ms 
+	INNER JOIN status AS s 
+	ON ms.status = s.status_id
+	WHERE ms.genres LIKE '%Sport%'
+	ORDER BY ms.premiere DESC;
+
+/*  Consulta FullText Key */
+SELECT * FROM movieseries
+	WHERE MATCH(title, author, actors, genres)
+	AGAINST('stallone' IN BOOLEAN MODE);
+
+SELECT title, actors, author FROM movieseries
+	WHERE MATCH(title, author, actors, genres)
+	AGAINST('stallone' IN BOOLEAN MODE);
+
+SELECT title, category, genres FROM movieseries
+	WHERE MATCH(title, author, actors, genres)
+	AGAINST('drama' IN BOOLEAN MODE);
+
+SELECT ms.title, ms.category, ms.genres, s.status 
+	FROM movieseries AS ms
+	INNER JOIN status AS s
+	ON ms.status = s.status_id
+	WHERE MATCH(ms.title, ms.author, ms.actors, ms.genres)
+	AGAINST('drama' IN BOOLEAN MODE);
+
+DELETE FROM status WHERE status_id = 5;
