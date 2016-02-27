@@ -403,3 +403,16 @@ Ejemplos:
 
 		WHERE t1.field1 = 'a_value'
 		ORDER BY t1.field3 DESC
+
+### CONSULTAS FULLTEXT KEY
+
+	SELECT * FROM table
+		WHERE MATCH(field1, field2, field3, field4)
+		AGAINST('a_search' IN BOOLEAN MODE);
+
+	SELECT t1.field1, t1.field2, t2.field1, t2.field4
+		FROM table1 AS t1
+		INNER JOIN table2 AS t2
+		ON t1.field1 = t2.field4
+		WHERE MATCH(t1.field1, t1.field2, t2.field1, t2.field4)
+		AGAINST('a_search' IN BOOLEAN MODE);
