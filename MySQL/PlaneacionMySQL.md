@@ -118,6 +118,7 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 	* Consultas Múltiples (JOINS)
 	* Encriptación
 	* Búsquedas FULLTEXT
+	* Instrucción REPLACE
 * Hospedaje Compartido y FTP
 
 ### :pencil: Actividades para la siguiente sesión:
