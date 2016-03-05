@@ -135,5 +135,5 @@ Al finalizar el curso el estudiante utilizará el lenguaje de programación PHP 
 	5. Queries CRUD de la lógica de negocio (sql) 
 
 ## :date: Entrega:
-**Lunes 07 Marzo 2016 11:59:59pm**
+**Jueves 10 Marzo 2016 11:59:59pm**
 La entrega puede ser vía email, dropbox, google drive, zip en cualquier medio de transferencia de archivos al correo jonmircha@gmail.com
